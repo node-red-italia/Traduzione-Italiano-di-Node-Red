@@ -7,29 +7,29 @@
 
  2. Copiare le cartelle \it nei percorsi come descritto qua di seguito.
  
-  -editor-client
- 
- Copiare la cartella \it del percorso \editor-client\locales in :
- 
- Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/editor-client/locales
- 
- MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\editor-client\locales
-   
- -nodes
- 
- Copiare la cartella \it del percorso \nodes\locales in :
- 
- Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/nodes/locales
- 
- MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\nodes\locales
- 
- -runtime
- 
- Copiare la cartella \it del percorso \runtime\locales in :
- 
- Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/runtime/locales
- 
- MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\runtime\locales
+     -editor-client
+
+      Copiare la cartella \it del percorso \editor-client\locales in :
+
+      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/editor-client/locales
+
+      MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\editor-client\locales
+
+    -nodes
+
+      Copiare la cartella \it del percorso \nodes\locales in :
+
+      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/nodes/locales
+
+      MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\nodes\locales
+
+    -runtime
+
+      Copiare la cartella \it del percorso \runtime\locales in :
+
+      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/runtime/locales
+
+      MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\runtime\locales
  
  3. Riavviare node-red.
  4. Dalla pagina web portarsi su Settings nella Tab View selezionare "language.it", quindi chiudere la finestra.
