@@ -7,7 +7,7 @@
 
  2. Copiare le cartelle \it nei percorsi come descritto qua di seguito.
  
- # editor-client
+  -editor-client
  
  Copiare la cartella \it del percorso \editor-client\locales in :
  
@@ -15,7 +15,7 @@
  
  MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\editor-client\locales
    
- # nodes
+ -nodes
  
  Copiare la cartella \it del percorso \nodes\locales in :
  
@@ -23,7 +23,7 @@
  
  MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\nodes\locales
  
- # runtime
+ -runtime
  
  Copiare la cartella \it del percorso \runtime\locales in :
  
