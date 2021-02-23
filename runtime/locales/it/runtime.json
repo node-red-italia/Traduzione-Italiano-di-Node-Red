@@ -1,0 +1,185 @@
+{
+    "runtime": {
+        "welcome": "Benvenuto in Node-RED",
+        "version": "__component__ versione: __version__",
+        "unsupported_version": "Versione non supportata di __component__. Richiede: __requires__ Trovata: __version__",
+        "paths": {
+            "settings": "File impostazioni  : __path__",
+            "httpStatic": "HTTP Statico    : __path__"
+        }
+    },
+	
+    "server": {
+        "loading": "Caricamento Palette nodi",
+        "palette-editor": {
+            "disabled": "Editor Palette disattivato : impostazioni utente",
+            "npm-not-found": "Editor Palette disattivato : comando npm non trovato",
+            "npm-too-old": "Editor Palette disattivato : versione npm troppo datata. Richiede npm >= 3.x"
+        },
+        "errors": "Impossibile registrare il nodo __count__",
+        "errors_plural": "FImpossibile registrare i nodi __count__",
+        "errors-help": "Esegui con -v per i dettagli",
+        "missing-modules": "Mancano dei moduli del nodo:",
+        "node-version-mismatch": "Il modulo del nodo non può essere caricato su questa versione. Richiede: __version__ ",
+        "type-already-registered": "'__type__' è già stato registrato __module__",
+        "removing-modules": "Rimozione di moduli da config",
+        "added-types": "Aggiunti questi nodi:",
+        "removed-types": "Rimossi questi nodi:",
+        "install": {
+            "invalid": "Nome invalido",
+            "installing": "Installazione del modulo: __name__, versione: __version__",
+            "installed": "Installato: __name__",
+            "install-failed": "Installazione non riuscita",
+            "install-failed-long": "Installazione del modulo __name__ non riuscita:",
+            "install-failed-not-found": "$t(server.install.install-failed-long) modulo non trovato",
+            "install-failed-name": "$t(server.install.install-failed-long) nome invalido del modulo: __name__",
+            "install-failed-url": "$t(server.install.install-failed-long) url invalido: __url__",
+            "upgrading": "Aggiornamento modulo: __name__ alla versione: __version__",
+            "upgraded": "Aggiornamento modulo: __name__. Riavviare node-red per poterlo utilizzare",
+            "upgrade-failed-not-found": "$t(server.install.install-failed-long) versione non trovata",
+            "uninstalling": "Disinstallazione modulo: __name__",
+            "uninstall-failed": "Disinstallazione non riuscita",
+            "uninstall-failed-long": "Disinstallazione del modulo __name__ non riuscita:",
+            "uninstalled": "Disinstallazione modulo: __name__"
+        },
+        "unable-to-listen": "Impossibile leggere __listenpath__",
+        "port-in-use": "Errore: porta già usata",
+        "uncaught-exception": "Eccezione non rilevata:",
+        "admin-ui-disabled": "Admin UI disattivata",
+        "now-running": "Server in esecuzione su __listenpath__",
+        "failed-to-start": "Impossibile avviare il server:",
+        "headless-mode": "Esecuzione in modalità headless ",
+        "httpadminauth-deprecated": "l'uso di httpAdminAuth è deprecato. Utilizza invece adminAuth",
+        "https": {
+            "refresh-interval": "Aggiornamento delle impostazioni https ogni __interval__ ore",
+            "settings-refreshed": "Le impostazioni https del server sono state aggiornate",
+            "refresh-failed": "Impossibile aggiornare le impostazioni https: __message__",
+            "nodejs-version": "httpsRefreshInterval richiede Node.js 11 or successivo",
+            "function-required": "httpsRefreshInterval richiede una proprietà https per essere una funzione"
+        }
+    },
+	
+    "api": {
+        "flows": {
+            "error-save": "Errore durante il salvataggio dei flow: __message__",
+            "error-reload": "Errore nel caricamento flow: __message__"
+        },
+        "library": {
+            "error-load-entry": "Errore durante il caricamento della voce della libreria '__path__': __message__",
+            "error-save-entry": "Errore durante il salvataggio della voce della libreria '__path__': __message__",
+            "error-load-flow": "Errore durante il caricamento del flusso '__path__': __message__",
+            "error-save-flow": "Errore durante il salvataggio del flusso '__path__': __message__"
+        },
+        "nodes": {
+            "enabled": "Nodi abilitati:",
+            "disabled": "Nodi disabilitati:",
+            "error-enable": "Impossibile abilitare il nodo:"
+        }
+    },
+	
+    "comms": {
+        "error": "Errore del canale di comunicazione: __message__",
+        "error-server": "Errore del server di comunicazione: __message__",
+        "error-send": "Errore di invio della comunicazione: __message__"
+    },
+
+    "settings": {
+        "user-not-available": "Impossibile salvare le impostazioni dell'utente: __message__",
+        "not-available": "Impostazioni non disponibili",
+        "property-read-only": "Proprietà '__prop__' è in read-only"
+    },
+	
+    "nodes": {
+        "credentials": {
+            "error":"Errore durante il caricamento delle credenziali: __message__",
+            "error-saving":"Errore durante il salvataggio delle credenziali: __message__",
+            "not-registered": "Tipo di credenziale '__type__' non è registrata",
+            "system-key-warning": "\n\n---------------------------------------------------------------------\nIl file delle credenziali del flusso viene crittografato utilizzando una chiave generata dal sistema.\n\nSe la chiave generata dal sistema viene persa per qualsiasi motivo, il tuo file delle credenziali\nnon sarà recuperato, dovrai eliminarlo e reinserire\nle tue credenziali.\n\nÈ necessario impostare la propria chiave utilizzando l'opzione 'credentialSecret' nel file\n settings. Node-RED ricodificherà quindi il tuo file delle credenziali\nutilizzando la chiave scelta la prossima volta eseguirai un deploy.\n---------------------------------------------------------------------\n"
+        },
+        "flows": {
+            "safe-mode": "Flow interrotti in modalità provvisoria. Esegui il deploy per iniziare.",
+            "registered-missing": "Tipo mancante: __type__",
+            "error": "Errone nel caricare i flow: __message__",
+            "starting-modified-nodes": "Avvio dei nodi modificati",
+            "starting-modified-flows": "Avvio dei flow modificati",
+            "starting-flows": "Avvio dei flow",
+            "started-modified-nodes": "Nodi modificati avviati",
+            "started-modified-flows": "Flow modificati avviati",
+            "started-flows": "Flow avviati",
+            "stopping-modified-nodes": "Nodi modificati in arresto",
+            "stopping-modified-flows": "Flow modificati in arresto",
+            "stopping-flows": "Arresto dei Flow",
+            "stopped-modified-nodes": "Nodi modificati arrestati",
+            "stopped-modified-flows": "Flow modificati arrestati",
+            "stopped-flows": "Flow arrestati",
+            "stopped": "Arrestati",
+            "stopping-error": "Errore durante l'arresto del nodo: __message__",
+            "added-flow": "Aggiungi Flow: __label__",
+            "updated-flow": "Aggiorna Flow: __label__",
+            "removed-flow": "Rimosso Flow: __label__",
+            "missing-types": "In attesa della registrazione dei tipi mancanti:",
+            "missing-type-provided": " - __type__ (fornito dal modulo npm __module__)",
+            "missing-type-install-1": "Per installare uno di questi moduli mancanti, avvia:",
+            "missing-type-install-2": "nella cartella:"
+        },
+        "flow": {
+            "unknown-type": "Tipo sconosciuto : __type__",
+            "missing-types": "tipi mancanti",
+            "error-loop": "Il messaggio ha superato il numero massimo di caratteri"
+        },
+        "index": {
+            "unrecognised-id": "Id non riconosciuto: __id__",
+            "type-in-use": "Tipo in uso: __msg__",
+            "unrecognised-module": "Modulo non riconosciuto: __module__"
+        },
+        "registry": {
+            "localfilesystem": {
+                "module-not-found": "Impossibile trovare il modulo '__module__'"
+            }
+        }
+    },
+	
+    "storage": {
+        "index": {
+            "forbidden-flow-name": "nome flow vietato"
+        },
+        "localfilesystem": {
+            "user-dir": "Directory utente : __path__",
+            "flows-file": "File dei flow     : __path__",
+            "create": "Crea nuovo __type__ file",
+            "empty": "Il file __type__ esistente è vuoto",
+            "invalid": "Il file __type__ contiene u json non valido",
+            "restore": "Ripristino __type__ file di backup : __path__",
+            "restore-fail": "Ripristino non riuscito del  __type__ file di backup: __message__",
+            "fsync-fail": "Cancellazione file __path__ dal disco non riuscita: __message__",
+            "projects": {
+                "changing-project": "Imposta il progetto attivo : __project__",
+                "active-project": "Progetto Attivo : __project__",
+                "project-not-found": "Progetto non trovato : __project__",
+                "no-active-project": "Nessun progetto attivo : uso i file di default per il flow",
+                "disabled": "Progetti disabilitati : editorTheme.projects.enabled=false",
+                "disabledNoFlag": "Progetti disabilitati : imposta editorTheme.projects.enabled=true per abilitare",
+                "git-not-found": "Progetti disabilitati : comando git non trovato",
+                "git-version-old": "Progetti disabilitati : versione __version__ git non supportata. Richiede 2.x",
+                "summary": "Un pprogetto di Node-RED",
+                "readme": "### About\n\nQuesto è il tuo file README.md del progetto. Aiuta gli utenti a capire cosa fa\nil tuo prgetto, come usarlo e qualsiasi altra cosa potrebbero aver bisogno di sapere."
+            }
+        }
+    },
+	
+    "context": {
+        "log-store-init": "Archivio Context : '__name__' [__info__]",
+        "error-loading-module": "Errore caricamento archivio context : __message__",
+        "error-loading-module2": "Errore caricamento archivio context '__module__': __message__",
+        "error-module-not-defined": "Nell'archivio Context '__storage__' manca l'opzione 'module'",
+        "error-invalid-module-name": "Il nome dell'archivio context non è valido : '__name__'",
+        "error-invalid-default-module": "L'archivio context di default è sconosciuto: '__storage__'",
+        "unknown-store": "L'archivio context '__name__' è sconosciuto. Utilizzo l'archivio predefinito.",
+        "localfilesystem": {
+            "invalid-json": "JSON non valido nel file context '__file__'",
+            "error-circular": "Context __scope__ contiene un riferimento circolare che non può essere mantenuto",
+            "error-write": "Errore scrittura context: __message__"
+        }
+    }
+
+}

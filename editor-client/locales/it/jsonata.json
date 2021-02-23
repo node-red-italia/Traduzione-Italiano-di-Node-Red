@@ -1,0 +1,274 @@
+{
+    "$string": {
+        "args": "arg[, prettify]",
+        "desc": "Trasmette il parametro `arg` a una stringa utilizzando le seguenti regole di casting:\n\n - Le stringhe sono invariate\n - Le funzioni vengono convertite in una stringa vuota\n - Infinito numerico e NaN generano un errore perché non possono essere rappresentati come un numero JSON\n - Tutti gli altri valori vengono convertiti in una stringa JSON utilizzando la funzione `JSON.stringify`. Se `prettify` è vero, viene prodotto JSON \"prettified\". cioè una riga per campo e le linee saranno rientrate in base alla profondità del campo."
+    },
+    "$length": {
+        "args": "str",
+        "desc": "Restituisce il numero di caratteri nella stringa `str`. Viene generato un errore se `str` ​​non è una stringa."
+    },
+    "$substring": {
+        "args": "str, start[, length]",
+        "desc": "Restituisce una stringa contenente i caratteri nel primo parametro `str` ​​a partire dalla posizione `start` (offset zero). Se è specificato `length`, la sottostringa conterrà il massimo di caratteri `length`. Se `start` è negativo, indica il numero di caratteri dalla fine di `str`."
+    },
+    "$substringBefore": {
+        "args": "str, chars",
+        "desc": "Restituisce la sottostringa prima della prima occorrenza della sequenza di caratteri `chars` in `str`. Se `str` ​​non contiene `chars`, restituisce `str`."
+    },
+    "$substringAfter": {
+        "args": "str, chars",
+        "desc": "Restituisce la sottostringa dopo la prima occorrenza della sequenza di caratteri `chars` in `str`. Se `str` ​​non contiene `chars`, restituisce `str`."
+    },
+    "$uppercase": {
+        "args": "str",
+        "desc": "Restituisce una stringa con tutti i caratteri di `str` ​​convertiti in maiuscolo."
+    },
+    "$lowercase": {
+        "args": "str",
+        "desc": "Restituisce una stringa con tutti i caratteri di `str` ​​convertiti in minuscolo."
+    },
+    "$trim": {
+        "args": "str",
+        "desc": "Normalizza e taglia tutti i caratteri di spazio in `str` ​​applicando i seguenti passaggi:\n\n - Tutte le tabulazioni, i ritorni a capo e gli avanzamenti riga vengono sostituiti con spazi.\n- Le sequenze contigue di spazi sono ridotte a un unico spazio.\n- Gli spazi finali e iniziali vengono rimossi.\n\n Se `str` ​​non è specificato (cioè questa funzione viene invocata senza argomenti), il valore del contesto viene utilizzato come valore di `str`. Viene generato un errore se `str` ​​non è una stringa."
+    },
+    "$contains": {
+        "args": "str, pattern",
+        "desc": "Restituisce `true` se `str` ​​corrisponde a `pattern`, altrimenti restituisce `false`. Se `str` ​​non è specificato (cioè questa funzione viene invocata con un argomento), allora il valore del contesto viene usato come valore di `str`. Il parametro `pattern` può essere una stringa o un`espressione regolare."
+    },
+    "$split": {
+        "args": "str[, separator][, limit]",
+        "desc": "Divide il parametro `str` in un array di sottostringhe. In errore se `str` ​​non è una stringa. Il parametro opzionale `separator` specifica i caratteri all'interno della `str` su cui dovrebbe essere divisa come stringa o espressione regolare. Se `separator` non è specificato, viene considerata una stringa vuota e `str` ​​sarà diviso in un array di singoli caratteri. In errore se `separator` non è una stringa. Il parametro opzionale `limit` è un numero che specifica il numero massimo di sottostringhe da includere nell'array risultante. Eventuali sottostringhe aggiuntive vengono eliminate. Se `limit` non è specificato, allora `str` ​​è completamente diviso senza alcun limite alla dimensione dell'array risultante. In errore se `limit` non è un numero non negativo."
+    },
+    "$join": {
+        "args": "array[, separator]",
+        "desc": "Unisce un array di stringhe in una singola stringa separata dal parametro opzionale `separator`. In errore se l'input `array` contiene un elemento che non è una stringa. Se `separator` non è specificato, si presume che sia una stringa vuota, cioè nessun `separator` tra le stringhe dei componenti. In errore se `separator` non è una stringa."
+    },
+    "$match": {
+        "args": "str, pattern [, limit]",
+        "desc": "Applica la stringa `str` all'espressione regolare `pattern` e restituisce un array di oggetti, con ogni oggetto contenente informazioni su ogni occorrenza di una corrispondenza all'interno di `str`."
+    },
+    "$replace": {
+        "args": "str, pattern, replacement [, limit]",
+        "desc": "Trova le occorrenze di `pattern` all'interno di `str` ​​e le sostituisce con `replacement`.\n\nIl parametro opzionale `limit` è il numero massimo di sostituzioni."
+    },
+    "$now": {
+        "args":"",
+        "desc":"Genera un timestamp in formato compatibile ISO 8601 e lo restituisce come una stringa."
+    },
+    "$base64encode": {
+        "args":"string",
+        "desc":"Converte una stringa ASCII in una rappresentazione in base 64. Ogni carattere nella stringa viene considerato come un byte di dati binari. Ciò richiede che tutti i caratteri nella stringa siano compresi nell'intervallo da 0x00 a 0xFF, che include tutti i caratteri nelle stringhe con codifica URI. I caratteri Unicode al di fuori di tale intervallo non sono supportati."
+    },
+    "$base64decode": {
+        "args":"string",
+        "desc":"Converte i byte codificati in base 64 in una stringa, utilizzando una tabella codici Unicode UTF-8."
+    },
+    "$number": {
+        "args": "arg",
+        "desc": "Trasmette il parametro `arg` a un numero utilizzando le seguenti regole di casting:\n\n - I numeri non vengono modificati\n - Le stringhe che contengono una sequenza di caratteri che rappresentano un numero JSON legale vengono convertite in quel numero\n - Tutti gli altri valori causano un errore."
+    },
+    "$abs": {
+        "args":"number",
+        "desc":"Restituisce il valore assoluto del parametro `number`."
+    },
+    "$floor": {
+        "args":"number",
+        "desc":"Restituisce il valore di `number` arrotondato per difetto al numero intero più vicino che è minore o uguale a `number`."
+    },
+    "$ceil": {
+        "args":"number",
+        "desc":"Restituisce il valore di `number` arrotondato al numero intero più vicino maggiore o uguale a `number`."
+    },
+    "$round": {
+        "args":"number [, precision]",
+        "desc":"Restituisce il valore del parametro `number` arrotondato al numero di cifre decimali specificato dal parametro opzionale `precision`."
+    },
+    "$power": {
+        "args":"base, exponent",
+        "desc":"Restituisce il valore di `base` elevato alla potenza di `exponent`."
+    },
+    "$sqrt": {
+        "args":"number",
+        "desc":"Restituisce la radice quadrata del valore del parametro `number`."
+    },
+    "$random": {
+        "args":"",
+        "desc":"Restituisce un numero pseudo casuale maggiore o uguale a zero e minore di uno."
+    },
+    "$millis": {
+        "args":"",
+        "desc":"Restituisce il numero di millisecondi dall'epoca di Unix (1 gennaio 1970 UTC) come numero. Tutte le invocazioni di `$millis()` all'interno di una valutazione di un`espressione restituiranno tutte lo stesso valore."
+    },
+    "$sum": {
+        "args": "array",
+        "desc": "Restituisce la somma aritmetica di un `array` di numeri. In errore se l'input `array` contiene un elemento che non è un numero."
+    },
+    "$max": {
+        "args": "array",
+        "desc": "Restituisce il numero massimo in un `array` di numeri. In errore se l'input `array` contiene un elemento che non è un numero."
+    },
+    "$min": {
+        "args": "array",
+        "desc": "Restituisce il numero minimo in un `array` di numeri. In errore se l'input `array` contiene un elemento che non è un numero."
+    },
+    "$average": {
+        "args": "array",
+        "desc": "Restituisce il valore medio di un `array` di numeri. In errore se l'input `array` contiene un elemento che non è un numero."
+    },
+    "$boolean": {
+        "args": "arg",
+        "desc": "Converte l'argomento in un valore booleano utilizzando le seguenti regole:\n\n - `Boolean` : invariato\n - `string`: vuota : `false`\n - `string`: non-vuota : `true`\n - `number`: `0` : `false`\n - `number`: non-zero : `true`\n - `null` : `false`\n - `array`: vuoto : `false`\n - `array`: contiene un membro che esegue il cast a `true` : `true`\n - `array`: tutti i membri trasmessi a `false` : `false`\n - `object`: vuoto : `false`\n - `object`: non-vuoto : `true`\n - `function` : `false`"
+    },
+    "$not": {
+        "args": "arg",
+        "desc": "Restituisce booleano NOT sull'argomento. `arg` viene prima convertito a un valore booleano"
+    },
+    "$exists": {
+        "args": "arg",
+        "desc": "Restituisce booleano `true` se l'espressione `arg` restituisce un valore, o `false` se l'espressione non corrisponde a nulla (ad esempio un percorso a un riferimento di campo inesistente)."
+    },
+    "$count": {
+        "args": "array",
+        "desc": "Restituisce il numero di elementi nell'array"
+    },
+    "$append": {
+        "args": "array, array",
+        "desc": "Aggiunge due array"
+    },
+    "$sort": {
+        "args":"array [, function]",
+        "desc":"Restituisce un array contenente tutti i valori nel parametro `array`, ma ordinati in ordine.\n\nSe viene fornita una `function` di confronto, deve essere una funzione che accetta due parametri:\n\n`funzione (sinistra , destra)`\n\nQuesta funzione viene richiamata dall'algoritmo di ordinamento per confrontare due valori sinistro e destro. Se il valore di sinistra deve essere posizionato dopo il valore di destra nell'ordinamento desiderato, la funzione deve restituire booleano `true` per indicare uno scambio. Altrimenti deve restituire `false`."
+    },
+    "$reverse": {
+        "args":"array",
+        "desc":"Restituisce un array contenente tutti i valori dal parametro `array`, ma in ordine inverso."
+    },
+    "$shuffle": {
+        "args":"array",
+        "desc":"Restituisce un array contenente tutti i valori dal parametro `array`, ma mescolati in ordine casuale."
+    },
+    "$zip": {
+        "args":"array, ...",
+        "desc":"Restituisce un array di array (zippato) contenente array raggruppati di valori dagli argomenti `array1` ...`arrayN` dall'indice 0, 1, 2 ..."
+    },
+    "$keys": {
+        "args": "object",
+        "desc": "Restituisce un array contenente le chiavi nell'oggetto. Se l'argomento è un array di oggetti, l'array restituito contiene un elenco deduplicato di tutte le chiavi in ​​tutti gli oggetti."
+    },
+    "$lookup": {
+        "args": "object, key",
+        "desc": "Restituisce il valore associato alla chiave nell'oggetto. Se il primo argomento è un array di oggetti, vengono cercati tutti gli oggetti nell'array e vengono restituiti i valori associati a tutte le occorrenze di chiave."
+    },
+    "$spread": {
+        "args": "object",
+        "desc": "Divide un oggetto contenente coppie chiave / valore in una matrice di oggetti, ognuno dei quali ha una singola coppia chiave / valore dall'oggetto di input. Se il parametro è un array di oggetti, l'array risultante contiene un oggetto per ogni coppia chiave / valore in ogni oggetto dell'array fornito."
+    },
+    "$merge": {
+        "args": "array&lt;object&gt;",
+        "desc": "Unisce un array di `object` in un unico `object` contenente tutte le coppie chiave / valore da ciascuno degli oggetti nell'array di input. Se uno qualsiasi degli oggetti di input contiene la stessa chiave, l' `object` restituito conterrà il valore dell'ultimo nell'array. In errore se la matrice di input contiene un elemento che non è un oggetto."
+    },
+    "$sift": {
+        "args":"object, function",
+        "desc":"Restituisce un oggetto che contiene solo le coppie chiave / valore dal parametro `object` che soddisfano il predicato `function` passato come secondo parametro.\n\nLa `function` fornita come secondo parametro deve avere la seguente forma:\n\n`function(value [, key [, object]])`"
+    },
+    "$each": {
+        "args":"object, function",
+        "desc":"Restituisce un array contenente i valori restituiti dalla `function` quando applicato a ciascuna coppia chiave / valore nell'oggetto."
+    },
+    "$map": {
+        "args":"array, function",
+        "desc":"Restituisce un array contenente i risultati dell'applicazione del parametro `function` a ciascun valore nel parametro `array`.\n\nLa `function` fornita come secondo parametro deve avere la seguente forma:\n\n`function(value [, index [, array]])`"
+    },
+    "$filter": {
+        "args":"array, function",
+        "desc":"Restituisce un array contenente solo i valori nel parametro `array` che soddisfano la `function`.\n\nLa `function` fornita come secondo parametro deve avere la seguente forma:\n\n`function(value [, index [, array]])`"
+    },
+    "$reduce": {
+        "args":"array, function [, init]",
+        "desc":"Restituisce un valore aggregato derivato dall'applicazione successiva del parametro `function` a ciascun valore in `array` in combinazione con il risultato dell'applicazione precedente della funzione.\n\nLa funzione deve accettare due argomenti e si comporta come un operatore infisso tra ogni valore all'interno di `array`. La firma di `function` deve essere della forma: `myfunc($accumulator, $value[, $index[, $array]])`\n\nIl parametro facoltativo `init` viene utilizzato come valore iniziale nell'aggregazione."
+    },
+    "$flowContext": {
+        "args": "string[, string]",
+        "desc": "Recupera una proprietà del contesto del flow.\n\nQuesta è una funzione definita da Node-RED."
+    },
+    "$globalContext": {
+        "args": "string[, string]",
+        "desc": "Recupera una proprietà del contesto globale.\n\nQuesta è una funzione definita da Node-RED."
+    },
+    "$pad": {
+        "args": "string, width [, char]",
+        "desc": "Restituisce una copia della `stringa` con un riempimento aggiuntivo, se necessario, in modo che il suo numero totale di caratteri sia almeno il valore assoluto del parametro `width`.\n\nSe `width` è un numero positivo, la stringa è riempita a destra; se negativo, viene riempita a sinistra.\n\nL'argomento facoltativo `char` specifica i caratteri di riempimento da usare. Se non specificato, il valore predefinito è il carattere spazio."
+    },
+    "$fromMillis": {
+        "args": "number",
+        "desc": "Converte un numero che rappresenta i millisecondi dall'epoca di Unix (1 gennaio 1970 UTC) in una stringa di timestamp nel formato ISO 8601."
+    },
+    "$formatNumber": {
+        "args": "number, picture [, options]",
+        "desc": "Converte il `number` in una stringa e lo formatta in una rappresentazione decimale come specificato dalla stringa `picture`.\n\n Il comportamento di questa funzione è coerente con la funzione XPath/XQuery fn:formato-numero come definito nel Specifica XPath F&O 3.1 . Il parametro della stringa dell'immagine definisce come il numero è formattato e ha la stessa sintassi di fn:formato-numero.\n\nIl terzo argomento opzionale `options` viene utilizzato per sovrascrivere i caratteri di formattazione definiti di default come il separatore decimale. Se fornito, questo argomento deve essere un oggetto contenente le coppie nome / valore specificate nella sezione del formato decimale della specifica XPath F&O 3.1."
+    },
+    "$formatBase": {
+        "args": "number [, radix]",
+        "desc": "Converte il `number` in una stringa e lo formatta in un numero intero rappresentato nella base numerica specificata dall'argomento `radix`. Se `radix` non è specificato, il valore predefinito è in base 10. `radix` può essere compreso tra 2 e 36, altrimenti viene generato un errore."
+    },
+    "$toMillis": {
+        "args": "timestamp",
+        "desc": "Converte una stringa `timestamp` nel formato ISO 8601 nel numero di millisecondi dall'epoca di Unix (1 gennaio 1970 UTC) come numero. Viene generato un errore se la stringa non è nel formato corretto."
+    },
+    "$env": {
+        "args": "arg",
+        "desc": "Restituisce il valore di una variabile d`ambiente.\n\nQuesta è una funzione di Node-RED."
+    },
+    "$eval": {
+        "args": "expr [, context]",
+        "desc": "Analizza e valuta la stringa `expr` che contiene JSON letterale o un`espressione JSONata utilizzando il contesto corrente come contesto per la valutazione." 
+    },
+    "$formatInteger": {
+        "args": "number, picture",
+        "desc": "Converte il `number` in una stringa e lo formatta in una rappresentazione intera come specificato dalla stringa `picture`. Il parametro della stringa immagine definisce il modo in cui il numero è formattato e ha la stessa sintassi di `fn: format-integer` dalla specifica XPath F&O 3.1."
+    },
+    "$parseInteger": {
+        "args": "string, picture",
+        "desc": "Analizza il contenuto del parametro `string` in un numero intero (come numero JSON) utilizzando il formato specificato dalla stringa `picture`. Il parametro stringa `picture` ha lo stesso formato di `$formatInteger`."
+    },
+    "$error": {
+        "args": "[str]",
+        "desc": "Genera un errore con un messaggio. L'opzione `str` ​​sostituirà il messaggio predefinito della funzione `$error()` valutata."
+    },
+    "$assert": {
+        "args": "arg, str",
+        "desc": "Se `arg` è vero, la funzione restituisce undefined. Se `arg` è falso, viene lanciata un'eccezione con `str` ​​come messaggio dell'eccezione."
+    },
+    "$single": {
+        "args": "array, function",
+        "desc": "Restituisce l'unico valore nel parametro `array` che soddisfa il predicato `function` (cioè la `function` restituisce booleano `true` quando viene passato il valore). Genera un`eccezione se il numero di valori corrispondenti non è esattamente uno.\n\nLa funzione deve essere fornita con la seguente forma: `function (value [, index [, array]])` dove value è ogni input dell'array, index è la posizione di quel valore e l'intero array viene passato come terzo argomento"
+    },
+    "$encodeUrl": {
+        "args": "str",
+        "desc": "Codifica un componente URL (Uniform Resource Locator) sostituendo ogni istanza di determinati caratteri con una, due, tre o quattro sequenze di fuga che rappresentano la codifica UTF-8 del carattere.\n\nEsempio: `$encodeUrlComponent(\"?x=test\")` => `\"%3Fx%3Dtest\"`"
+    },
+    "$encodeUrlComponent": {
+        "args": "str",
+        "desc": "Codifica un URL (Uniform Resource Locator) sostituendo ogni istanza di determinati caratteri con una, due, tre o quattro sequenze di fuga che rappresentano la codifica UTF-8 del carattere. \n\nEsempio: `$encodeUrl(\"https://mozilla.org/?x=шеллы\")` => `\"https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B\"`"
+    },
+    "$decodeUrl": {
+        "args": "str",
+        "desc": "Decodifica un componente URL (Uniform Resource Locator) creato in precedenza da encodeUrlComponent.\n\nEsempio: `$decodeUrlComponent(\"%3Fx%3Dtest\")` => `\"?x=test\"`"
+    },
+    "$decodeUrlComponent": {
+        "args": "str",
+        "desc": "Decodifica un URL (Uniform Resource Locator) creato in precedenza da encodeUrl. \n\nEsempio: `$decodeUrl(\"https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B\")` => `\"https://mozilla.org/?x=шеллы\"`"
+    },
+    "$distinct": {
+        "args": "array",
+        "desc": "Restituisce un array con valori duplicati rimossi da `array`"
+    },
+    "$type": {
+        "args": "value",
+        "desc": "Restituisce il tipo di `value` come stringa. Se `value` non è definito, restituirà `undefined`"
+    },
+    "$moment": {
+        "args": "[str]",
+        "desc": "Ottiene un oggetto data utilizzando la libreria Moment."
+    }
+}

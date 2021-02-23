@@ -1,0 +1,23 @@
+{
+    "info": {
+        "tip0" : "È possibile rimuovere i nodi oi collegamenti selezionati con {{core:delete-selection}}",
+        "tip1" : "Cerca i nodi usando {{core:search}}",
+        "tip2" : "{{core:toggle-sidebar}} alternerà la visualizzazione di questa barra laterale",
+        "tip3" : "Puoi gestire la tua palette di nodi con {{core:manage-palette}}",
+        "tip4" : "La configurazione dei nodi del flow è elencata nel pannello della barra laterale. Vi si può accedere dal menu o con {{core:show-config-tab}}",
+        "tip5" : "Abilita o disabilita questi suggerimenti dall'opzione nelle impostazioni",
+        "tip6" : "Spostare i nodi selezionati utilizzando i tasti [sinistra] [su] [giu] e [right]. Maniateni [shift] per spostarli rapidamente",
+        "tip7" : "Trascinando un nodo su un filo si inserirà nel collegamento",
+        "tip8" : "Esporta i nodi selezionati, o la scheda attuale con {{core:show-export-dialog}}",
+        "tip9" : "Importa un flow trascinandone il JSON nell'editor, o con {{core:show-import-dialog}}",
+        "tip10" : "[shift] [click] e trascina su una I/O del nodo per spostare tutti i fili collegati o solo quello selezionato",
+        "tip11" : "Mostra la tab info {{core:show-info-tab}} o la Degug tab con  {{core:show-debug-tab}}",
+        "tip12" : "[ctrl] [click] nell'area di lavoro per aprire la finestra di dialogo di aggiunta rapida",
+        "tip13" : "Mantieni premuto [ctrl] quando esegui [click] su un I/O del nodo per consentire il cablaggio rapido",
+        "tip14" : "Mantieni premuto [shift] quando esegui [click]su un nodo per selezionare anche tutti i suoi nodi connessi",
+        "tip15" : "Mantieni premuto [ctrl] quando esegui [click] su un nodo per aggiungerlo o rimuoverlo dalla selezione corrente",
+        "tip16" : "Cambia la flow tab con {{core:show-previous-tab}} e {{core:show-next-tab}}",
+        "tip17" : "È possibile confermare le modifiche nella barra di modifica del nodo con {{core:confirm-edit-tray}} o annulare con {{core:cancel-edit-tray}}",
+        "tip18" : "Premendo {{core:edit-selected-node}} modificherà il primo nodo nella selezione attuale"
+    }
+}
