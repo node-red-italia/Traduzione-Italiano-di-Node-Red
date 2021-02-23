@@ -32,7 +32,7 @@
       MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\runtime\locales
  
  3. Riavviare node-red.
- 4. Dalla pagina web portarsi su Settings nella Tab View selezionare "language.it", quindi chiudere la finestra.
+ 4. Dalla pagina web portarsi su Settings nella Tab View selezionare "language.it", quindi chiudere la finestra (oppure usare la lingua di default del browser).
  5. RIcaricare la pagina web con F5
 
 
