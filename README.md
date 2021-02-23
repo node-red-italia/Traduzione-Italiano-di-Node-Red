@@ -11,7 +11,7 @@
 
       Copiare la cartella \it del percorso \editor-client\locales in :
 
-      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/editor-client/locales
+      Linux/Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/editor-client/locales
 
       MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\editor-client\locales
 
@@ -19,7 +19,7 @@
 
       Copiare la cartella \it del percorso \nodes\locales in :
 
-      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/nodes/locales
+      Linux/Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/nodes/locales
 
       MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\nodes\locales
 
@@ -27,7 +27,7 @@
 
       Copiare la cartella \it del percorso \runtime\locales in :
 
-      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/runtime/locales
+      Linux/Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/runtime/locales
 
       MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\runtime\locales
  
@@ -38,4 +38,5 @@
 
 Se si effettuano upgrade di node-red, bisogna ricopiare i file nelle directory.
 
+Test effettuati su Windows 7, Raspberry PI OS e Ubuntu Server.
 
