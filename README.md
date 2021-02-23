@@ -9,11 +9,11 @@
  
      -editor-client
 
-      Copiare la cartella \it del percorso \editor-client\locales in :
+        Copiare la cartella \it del percorso \editor-client\locales in :
 
-      Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/editor-client/locales
+        Raspberry Pi OS :    /usr/lib/node_modules/node-red/node_modules/@node-red/editor-client/locales
 
-      MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\editor-client\locales
+        MS Windows:        C:\Users\<user>\AppData\Roaming\npm\node_modules\node-red\node_modules@node-red\editor-client\locales
 
     -nodes
 
