@@ -40,3 +40,14 @@ Se si effettuano upgrade di node-red, bisogna ricopiare i file nelle directory.
 
 Test effettuati su Windows 7, Raspberry PI OS e Ubuntu Server.
 
+Per qualunque problema potete contattarmi su
+
+Telegram:https://t.me/noderedIT (user Folgore)
+
+Forum ufficiale: (https://discourse.nodered.org/) user @Folgore
+
+Lo Staff
+
+Folgore
+
+
